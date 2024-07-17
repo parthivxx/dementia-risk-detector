@@ -1,0 +1,8 @@
+# created by virtualenv automatically
+.venv 
+.env
+.ipynb_checkpoints
+kitchen.jpg
+steep-stairs.jpg
+temp_image.jpg
+Vertex-AI-Function-Calling.ipynb

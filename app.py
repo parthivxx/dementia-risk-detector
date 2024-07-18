@@ -5,8 +5,6 @@ import os
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
 import PIL
-from langchain_chroma import Chroma
-from langchain.text_splitter import CharacterTextSplitter
 
 load_dotenv()
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")

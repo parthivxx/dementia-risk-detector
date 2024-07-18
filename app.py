@@ -15,8 +15,9 @@ llm = ChatGoogleGenerativeAI(model="gemini-pro-vision")
 
 
 def main():
-
+    prompt=st.text_input("Enter the Prompt here")
     upload_file = st.file_uploader("Upload an image" , accept_multiple_files=True)
+    
     image_paths = []
 
     if upload_file is not None:
@@ -39,8 +40,7 @@ def main():
             prompt_content = [
                 {
                     "type": "text",
-                        "text": "You're an expert in detecting any kind of risk that could be harmful to a dementia patient by analysing images.\nIs their any risk for a dementia patient in the given picture ? If yes , then what are those ?\n And suggest how can this risk might be avoided ?"
-                }
+                        "text": prompt}
             ]
 
             for image_path in image_paths:

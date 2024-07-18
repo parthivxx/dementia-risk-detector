@@ -52,7 +52,7 @@ def main():
                 content=prompt_content
             )
 
-            with st.spinner(f"Genetaing response..."):
+            with st.spinner(f"Generating response..."):
                 response = llm.invoke([human_message])
                 st.write(response.content)
 
